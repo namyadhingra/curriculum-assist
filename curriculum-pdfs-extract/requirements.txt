@@ -1,0 +1,18 @@
+# Core PDF parsing
+pdfplumber>=0.10.0
+PyMuPDF>=1.23.0
+
+# Fuzzy string matching for course-type classification
+rapidfuzz>=3.0.0
+
+# HTTP downloads
+requests>=2.31.0
+
+# Progress bar (optional but recommended)
+tqdm>=4.66.0
+
+# OCR fallback (optional — requires local Tesseract binary)
+# Install only if you need OCR for scanned PDFs:
+#   pip install pytesseract Pillow
+# pytesseract>=0.3.10
+# Pillow>=10.0.0

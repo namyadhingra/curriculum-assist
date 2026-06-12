@@ -1,0 +1,16 @@
+22:01:24 | INFO     | main | ============================================================
+22:01:24 | INFO     | main | IIT Jodhpur Curriculum Extractor — starting run
+22:01:24 | INFO     | main | pdf_dir    : C:\Namya\Projects\curriculum-pdfs-extract\curriculums
+22:01:24 | INFO     | main | output_dir : C:\Namya\Projects\curriculum-pdfs-extract\output
+22:01:24 | INFO     | main | log_file   : C:\Namya\Projects\curriculum-pdfs-extract\logs\parse_20260612_220124.log
+22:01:24 | INFO     | main | Found 11 PDF(s) to parse.
+22:01:24 | INFO     | main | ──────────────────────────────────────────────────
+22:01:24 | INFO     | main | Parsing: Curriculum-BS-Chemistry with Specialization.pdf
+22:01:27 | INFO     | main | ──────────────────────────────────────────────────
+22:01:27 | INFO     | main | Parsing: Curriculum-BS-Mathematics and Computing.pdf
+22:01:30 | INFO     | main | ──────────────────────────────────────────────────
+22:01:30 | INFO     | main | Parsing: Curriculum-BS-Physics with Specialization.pdf
+22:02:20 | INFO     | main | ──────────────────────────────────────────────────
+22:02:20 | INFO     | main | Parsing: Curriculum-BTech-BB.pdf
+22:02:40 | INFO     | main | ──────────────────────────────────────────────────
+22:02:40 | INFO     | main | Parsing: Curriculum-BTech-CE.pdf
