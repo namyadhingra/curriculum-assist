@@ -70,6 +70,47 @@ COURSE_TYPE_KEYWORDS: dict[str, list[str]] = {
         "programme elective",
         "elective",
     ],
+    "IS": [
+        "institute science",
+        "is",
+    ],
+    "IE": [
+        "institute engineering",
+        "ie",
+    ],
+    "IH": [
+        "institute humanities",
+        "ih",
+    ],
+    "LS": [
+        "programme linked science",
+        "ls",
+    ],
+    "PP": [
+        "b.tech. project",
+        "btech project",
+        "pp",
+    ],
+    "EC": [
+        "engineering science core",
+        "ec",
+    ],
+    "EE": [
+        "engineering science elective",
+        "ee",
+    ],
+    "NH": [
+        "non-graded humanities",
+        "nh",
+    ],
+    "NE": [
+        "non-graded engineering",
+        "ne",
+    ],
+    "ND": [
+        "design/practical experience",
+        "nd",
+    ],
 }
 
 # Regex patterns

@@ -84,7 +84,7 @@ _BS_PATTERN    = re.compile(r"bs[-_\s]?([a-z]{2,4})", re.IGNORECASE)
 _BSC_PATTERN   = re.compile(r"bsc[-_\s]?([a-z]{2,4})", re.IGNORECASE)
 
 # All valid course-type bucket keys
-BUCKET_KEYS = ["PC", "PE", "OE", "SC", "SE", "UNKNOWN"]
+BUCKET_KEYS = ["PC", "PE", "OE", "SC", "SE", "IS", "IE", "IH", "LS", "PP", "EC", "EE", "NH", "NE", "ND", "UNKNOWN"]
 
 
 # ─── Public API ────────────────────────────────────────────────────────────────

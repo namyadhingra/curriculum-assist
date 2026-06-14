@@ -1,8 +1,10 @@
 import Fuse from 'fuse.js';
 
+const CATEGORY_KEYS = ['PC', 'PE', 'OE', 'IS', 'IE', 'IH', 'LS', 'PP', 'EC', 'EE', 'NH', 'NE', 'ND'];
+
 export function matchCourses(offeredCourses, curriculumData, program, branch, spec) {
-  let pc = [];
-  let pe = [];
+  const categoryMap = {};
+  CATEGORY_KEYS.forEach(k => categoryMap[k] = []);
   let sc = [];
   let se = [];
   
@@ -10,8 +12,9 @@ export function matchCourses(offeredCourses, curriculumData, program, branch, sp
     const branchData = curriculumData[program] && curriculumData[program][branch];
     if (branchData && branchData.semesters) {
       for (const sem of Object.values(branchData.semesters)) {
-        if (sem.PC) pc.push(...sem.PC.map(c => ({...c, currType: 'PC'})));
-        if (sem.PE) pe.push(...sem.PE.map(c => ({...c, currType: 'PE'})));
+        CATEGORY_KEYS.forEach(key => {
+          if (sem[key]) categoryMap[key].push(...sem[key].map(c => ({...c, currType: key})));
+        });
         if (sem.SC) sc.push(...sem.SC.map(c => ({...c, currType: 'SC'})));
         if (sem.SE) se.push(...sem.SE.map(c => ({...c, currType: 'SE'})));
       }
@@ -26,6 +29,10 @@ export function matchCourses(offeredCourses, curriculumData, program, branch, sp
     console.error("Error extracting curriculum data", e);
   }
 
+  // Merge SC into PC (as requested: specialization core/compulsory appear with other core/compulsory)
+  categoryMap['PC'].push(...sc);
+  categoryMap['PE'].push(...se);
+
   const uniqueByCodeOrName = (arr) => {
     const seen = new Set();
     return arr.filter(item => {
@@ -36,10 +43,9 @@ export function matchCourses(offeredCourses, curriculumData, program, branch, sp
     });
   };
 
-  pc = uniqueByCodeOrName(pc);
-  pe = uniqueByCodeOrName(pe);
-  sc = uniqueByCodeOrName(sc);
-  se = uniqueByCodeOrName(se);
+  CATEGORY_KEYS.forEach(key => {
+    categoryMap[key] = uniqueByCodeOrName(categoryMap[key]);
+  });
 
   const fuseOptions = {
     keys: ['name'],
@@ -57,7 +63,19 @@ export function matchCourses(offeredCourses, curriculumData, program, branch, sp
     if (currCourse.name) {
       const results = fuseOffered.search(currCourse.name);
       if (results.length > 0 && results[0].score < 0.4) {
-        return results[0].item;
+        let bestMatch = results[0].item;
+        let bestScore = results[0].score;
+        
+        // Prioritize courses offered by the student's department if multiple similar matches exist
+        const candidateResults = results.filter(r => r.score - bestScore < 0.1);
+        if (candidateResults.length > 1) {
+          const branchDept = branch ? branch.toLowerCase() : '';
+          const preferred = candidateResults.find(r => r.item.department && r.item.department.toLowerCase().includes(branchDept));
+          if (preferred) {
+            return preferred.item;
+          }
+        }
+        return bestMatch;
       }
     }
     return null;
@@ -73,10 +91,13 @@ export function matchCourses(offeredCourses, curriculumData, program, branch, sp
     }).filter(Boolean);
   };
 
-  return {
-    PC: mapMatched(pc),
-    PE: mapMatched(pe),
-    SC: mapMatched(sc),
-    SE: mapMatched(se)
-  };
+  const result = {};
+  CATEGORY_KEYS.forEach(key => {
+    const matched = mapMatched(categoryMap[key]);
+    if (matched.length > 0) {
+      result[key] = matched;
+    }
+  });
+
+  return result;
 }

@@ -207,14 +207,14 @@
               "name": "designing approaches (4 Lectures);",
               "credits": null,
               "total_credits": null,
-              "type": "UNKNOWN"
+              "type": "PP"
             },
             {
               "code": null,
               "name": "Rational drug designing approaches and techniques",
               "credits": null,
               "total_credits": null,
-              "type": "UNKNOWN"
+              "type": "PP"
             },
             {
               "code": null,
@@ -466,7 +466,7 @@
               "name": "system pharmacists (2008) , 4th Edition.",
               "credits": null,
               "total_credits": null,
-              "type": "UNKNOWN"
+              "type": "IS"
             },
             {
               "code": null,
@@ -786,14 +786,14 @@
               "name": "Institute Core (I)",
               "credits": null,
               "total_credits": null,
-              "type": "UNKNOWN"
+              "type": "IE"
             },
             {
               "code": null,
               "name": "Humanities (IH)",
               "credits": null,
               "total_credits": null,
-              "type": "UNKNOWN"
+              "type": "IE"
             },
             {
               "code": null,
@@ -814,7 +814,7 @@
               "name": "B.Tech. Project (PP)",
               "credits": null,
               "total_credits": null,
-              "type": "UNKNOWN"
+              "type": "PP"
             },
             {
               "code": null,
@@ -835,14 +835,14 @@
               "name": "Non-Graded (N)",
               "credits": null,
               "total_credits": null,
-              "type": "UNKNOWN"
+              "type": "IE"
             },
             {
               "code": null,
               "name": "Engineering (NE)",
               "credits": null,
               "total_credits": null,
-              "type": "UNKNOWN"
+              "type": "EE"
             },
             {
               "code": null,
@@ -884,7 +884,7 @@
               "name": "1 hour of Lecture",
               "credits": "1-0-0",
               "total_credits": 1,
-              "type": "UNKNOWN"
+              "type": "EC"
             },
             {
               "code": null,
@@ -898,7 +898,7 @@
               "name": "1 hour of Lab/Project",
               "credits": "0-0-1",
               "total_credits": 0,
-              "type": "UNKNOWN"
+              "type": "EC"
             },
             {
               "code": null,
@@ -1370,7 +1370,7 @@
               "name": "Visual World, Geometry, Lights and Optics, Tracking, Motion, Depth, Devices and tools",
               "credits": null,
               "total_credits": null,
-              "type": "UNKNOWN"
+              "type": "IS"
             },
             {
               "code": null,
@@ -1398,7 +1398,7 @@
               "name": "Kernel Machines, Variants of Support Vector Machines, PAC Theory, Boosting, Graphical Models, Structural Predictions, Deep Reinforcement Learning, Space Coding",
               "credits": null,
               "total_credits": null,
-              "type": "UNKNOWN"
+              "type": "LS"
             },
             {
               "code": null,
@@ -1440,14 +1440,14 @@
               "name": "Institute Core (I)",
               "credits": null,
               "total_credits": null,
-              "type": "UNKNOWN"
+              "type": "IE"
             },
             {
               "code": null,
               "name": "Humanities (IH)",
               "credits": null,
               "total_credits": null,
-              "type": "UNKNOWN"
+              "type": "IE"
             },
             {
               "code": null,
@@ -1468,7 +1468,7 @@
               "name": "B.Tech. Project (PP)",
               "credits": null,
               "total_credits": null,
-              "type": "UNKNOWN"
+              "type": "PP"
             },
             {
               "code": null,
@@ -1489,14 +1489,14 @@
               "name": "Non-Graded (N)",
               "credits": null,
               "total_credits": null,
-              "type": "UNKNOWN"
+              "type": "IE"
             },
             {
               "code": null,
               "name": "Engineering (NE)",
               "credits": null,
               "total_credits": null,
-              "type": "UNKNOWN"
+              "type": "EE"
             },
             {
               "code": null,
@@ -1545,7 +1545,7 @@
               "name": "1 hour of Lecture",
               "credits": "1-0-0",
               "total_credits": 1,
-              "type": "UNKNOWN"
+              "type": "EC"
             },
             {
               "code": null,
@@ -1559,7 +1559,7 @@
               "name": "1 hour of Lab/Project",
               "credits": "0-0-1",
               "total_credits": 0,
-              "type": "UNKNOWN"
+              "type": "EC"
             },
             {
               "code": null,
@@ -1995,7 +1995,7 @@
               "name": "Application",
               "credits": null,
               "total_credits": null,
-              "type": "UNKNOWN"
+              "type": "PP"
             }
           ]
         }
@@ -2037,7 +2037,7 @@
               "name": "Non-Graded (N)",
               "credits": null,
               "total_credits": null,
-              "type": "UNKNOWN"
+              "type": "IE"
             },
             {
               "code": null,
@@ -2100,21 +2100,21 @@
               "name": "EEL1010: Introduction to Electrical Engineering",
               "credits": null,
               "total_credits": null,
-              "type": "UNKNOWN"
+              "type": "IE"
             },
             {
               "code": "CSL1010",
               "name": "CSL1010: Introduction to Computer Science",
               "credits": null,
               "total_credits": null,
-              "type": "UNKNOWN"
+              "type": "IE"
             },
             {
               "code": "BBL1010",
               "name": "BBL1010: Introduction to Bioengineering",
               "credits": null,
               "total_credits": null,
-              "type": "UNKNOWN"
+              "type": "IE"
             },
             {
               "code": "MAL1010",
@@ -2212,7 +2212,7 @@
               "name": "Introduction to Machine Learning",
               "credits": null,
               "total_credits": null,
-              "type": "UNKNOWN"
+              "type": "IE"
             },
             {
               "code": null,
@@ -2226,14 +2226,14 @@
               "name": "Signals and Systems",
               "credits": null,
               "total_credits": null,
-              "type": "UNKNOWN"
+              "type": "IE"
             },
             {
               "code": null,
               "name": "Intro. To Profession",
               "credits": null,
               "total_credits": null,
-              "type": "UNKNOWN"
+              "type": "NE"
             },
             {
               "code": null,
@@ -2282,14 +2282,14 @@
               "name": "Humanities II",
               "credits": null,
               "total_credits": null,
-              "type": "UNKNOWN"
+              "type": "IH"
             },
             {
               "code": null,
               "name": "Professional Ethics I",
               "credits": null,
               "total_credits": null,
-              "type": "UNKNOWN"
+              "type": "NH"
             },
             {
               "code": null,
@@ -2303,14 +2303,14 @@
               "name": "Structural Chemistry",
               "credits": null,
               "total_credits": null,
-              "type": "UNKNOWN"
+              "type": "IS"
             },
             {
               "code": null,
               "name": "Humanities III",
               "credits": null,
               "total_credits": null,
-              "type": "UNKNOWN"
+              "type": "IE"
             },
             {
               "code": "JUN2026",
@@ -2398,14 +2398,14 @@
               "name": "Institute Core (I)",
               "credits": null,
               "total_credits": null,
-              "type": "UNKNOWN"
+              "type": "IE"
             },
             {
               "code": null,
               "name": "Humanities (IH)",
               "credits": null,
               "total_credits": null,
-              "type": "UNKNOWN"
+              "type": "IE"
             },
             {
               "code": null,
@@ -2460,14 +2460,14 @@
               "name": "Non-Graded (N)",
               "credits": null,
               "total_credits": null,
-              "type": "UNKNOWN"
+              "type": "IE"
             },
             {
               "code": null,
               "name": "Engineering (NE)",
               "credits": null,
               "total_credits": null,
-              "type": "UNKNOWN"
+              "type": "EE"
             },
             {
               "code": null,
@@ -2677,7 +2677,7 @@
               "name": "Mathematical Methods for Physicists [3-0-0]",
               "credits": null,
               "total_credits": null,
-              "type": "UNKNOWN"
+              "type": "EC"
             },
             {
               "code": null,
@@ -2691,14 +2691,14 @@
               "name": "Applied Computational Lab [0-0-3]",
               "credits": null,
               "total_credits": null,
-              "type": "UNKNOWN"
+              "type": "PP"
             },
             {
               "code": null,
               "name": "process, Monte Carlo simulation of Area calculation, Random walk problem, Photon gas, Lennard-Jones fluid",
               "credits": null,
               "total_credits": null,
-              "type": "UNKNOWN"
+              "type": "NE"
             },
             {
               "code": null,
@@ -2801,7 +2801,7 @@
               "name": "Energy materials encompasses all the aspects of energy harvesting materials and their corresponding devices. Here, various renewable and non- renewable energy sources and their corresponding devices will be studied. The principle behind their operation and how the efficiency of the devices can be optimized to achieve maximum output from the devices would be discussed. This specialization will provide an in-depth understanding of the energy materials and their future applications.",
               "credits": null,
               "total_credits": null,
-              "type": "UNKNOWN"
+              "type": "LS"
             },
             {
               "code": null,
@@ -2871,7 +2871,7 @@
               "name": "1. Quantum Cryptography and Coding (QCL7XXX) [3-0-0] 2. Non-classical states for Quantum Information and Computation (QCL6XXX) [3-0-0] 3. Quantum Computational Finance (QCL7XXX) [3-0-0] 4. Quantum Machine Learning (QCL7X10) [3-0-0] 5. Hilbert Space Techniques for Quantum Mechanics (QCL7XXX) [3-0-0] 6. Seminal Features of Quantum Information Processing (QCL7010) [3-0-0] 7. Open Quantum Systems (PHL7480) [3-0-0] 8. Nonlinear Optics and Nonclassical Light Detection Techniques (QCL7XXX) [3-0-0] 9. Quantum Devices and Circuits [3-0- 0] 10. Project",
               "credits": "3-0-0",
               "total_credits": 3,
-              "type": "UNKNOWN"
+              "type": "EE"
             }
           ]
         },
@@ -2915,13 +2915,6 @@
             {
               "code": null,
               "name": "Specialization Core/Electives",
-              "credits": null,
-              "total_credits": null,
-              "type": "SC"
-            },
-            {
-              "code": null,
-              "name": "Environmental Science",
               "credits": null,
               "total_credits": null,
               "type": "SC"
@@ -3045,14 +3038,14 @@
               "name": "energy storage, wind energy, materials for wind blades, nuclear energy, geothermal energy",
               "credits": null,
               "total_credits": null,
-              "type": "UNKNOWN"
+              "type": "LS"
             },
             {
               "code": null,
               "name": "Metal Hydrides, Non-metal hydride nanomaterials for Hydrogen Storage, Thermodynamics of Hydrogen Storage",
               "credits": null,
               "total_credits": null,
-              "type": "UNKNOWN"
+              "type": "LS"
             },
             {
               "code": null,
@@ -3304,7 +3297,7 @@
               "name": "Data Structures and Algorithms",
               "credits": null,
               "total_credits": null,
-              "type": "UNKNOWN"
+              "type": "IE"
             },
             {
               "code": null,
@@ -3346,7 +3339,7 @@
               "name": "Humanities I",
               "credits": null,
               "total_credits": null,
-              "type": "UNKNOWN"
+              "type": "IH"
             },
             {
               "code": null,
@@ -3416,14 +3409,14 @@
               "name": "Humanities II",
               "credits": null,
               "total_credits": null,
-              "type": "UNKNOWN"
+              "type": "IH"
             },
             {
               "code": null,
               "name": "Professional Ethics I",
               "credits": null,
               "total_credits": null,
-              "type": "UNKNOWN"
+              "type": "NH"
             },
             {
               "code": null,
@@ -3493,7 +3486,7 @@
               "name": "Professional Ethics II",
               "credits": null,
               "total_credits": null,
-              "type": "UNKNOWN"
+              "type": "NH"
             },
             {
               "code": null,
@@ -3521,7 +3514,14 @@
               "name": "Humanities III",
               "credits": null,
               "total_credits": null,
-              "type": "UNKNOWN"
+              "type": "IH"
+            },
+            {
+              "code": null,
+              "name": "Environmental Science",
+              "credits": null,
+              "total_credits": null,
+              "type": "IS"
             },
             {
               "code": null,
@@ -3542,7 +3542,7 @@
               "name": "Humanities IV",
               "credits": null,
               "total_credits": null,
-              "type": "UNKNOWN"
+              "type": "IH"
             },
             {
               "code": null,
@@ -3577,7 +3577,7 @@
               "name": "Ordinary and singular points of a linear differential equation, Beta and Gamma functions, Dirac-delta",
               "credits": null,
               "total_credits": null,
-              "type": "UNKNOWN"
+              "type": "NE"
             },
             {
               "code": null,
@@ -3598,7 +3598,7 @@
               "name": "expressions, Applications in potential theory and wave mechanics such as evaluation of wave",
               "credits": null,
               "total_credits": null,
-              "type": "UNKNOWN"
+              "type": "PP"
             },
             {
               "code": null,
@@ -3808,7 +3808,7 @@
               "name": "mixing, concept of soliton. [9 Lectures]",
               "credits": null,
               "total_credits": null,
-              "type": "UNKNOWN"
+              "type": "EC"
             },
             {
               "code": null,
@@ -3850,7 +3850,7 @@
               "name": "Light-matter interactions: Atomic Polarizability, Dielectric constant, Electric Polarization and",
               "credits": null,
               "total_credits": null,
-              "type": "UNKNOWN"
+              "type": "IE"
             },
             {
               "code": null,
@@ -3955,28 +3955,28 @@
               "name": "Optical components for THz propagation and modulation, Terahertz Waveguides, Theory of",
               "credits": null,
               "total_credits": null,
-              "type": "UNKNOWN"
+              "type": "NE"
             },
             {
               "code": null,
               "name": "Rectangular Waveguides, Dielectric/plastic Fibers, Artificial Materials at Terahertz Frequencies:",
               "credits": null,
               "total_credits": null,
-              "type": "UNKNOWN"
+              "type": "IE"
             },
             {
               "code": null,
               "name": "Metamaterials, Photonic Crystals, Plasmonics. [12 Lectures]",
               "credits": null,
               "total_credits": null,
-              "type": "UNKNOWN"
+              "type": "LS"
             },
             {
               "code": null,
               "name": "Frequency Generation and Parametric Amplification, Frequency Multiplication of Microwaves,",
               "credits": null,
               "total_credits": null,
-              "type": "UNKNOWN"
+              "type": "NE"
             },
             {
               "code": null,
@@ -3990,21 +3990,21 @@
               "name": "Cells. [14 Lectures]",
               "credits": null,
               "total_credits": null,
-              "type": "UNKNOWN"
+              "type": "LS"
             },
             {
               "code": null,
               "name": "system, Toward 6G Communication Networks, Atmospheric THz propagation and Terahertz",
               "credits": null,
               "total_credits": null,
-              "type": "UNKNOWN"
+              "type": "NE"
             },
             {
               "code": null,
               "name": "communications, Industrial applications. [11 Lectures]",
               "credits": null,
               "total_credits": null,
-              "type": "UNKNOWN"
+              "type": "PP"
             },
             {
               "code": null,
@@ -4018,14 +4018,14 @@
               "name": "2. THz detection through electro-optical sampling",
               "credits": null,
               "total_credits": null,
-              "type": "UNKNOWN"
+              "type": "EC"
             },
             {
               "code": null,
               "name": "3. THz bandwidth measurement",
               "credits": null,
               "total_credits": null,
-              "type": "UNKNOWN"
+              "type": "ND"
             },
             {
               "code": null,
@@ -4067,7 +4067,7 @@
               "name": "waveguides, Planar waveguide and strip waveguide, splicers, connectors. [10 Lectures]",
               "credits": null,
               "total_credits": null,
-              "type": "UNKNOWN"
+              "type": "EC"
             },
             {
               "code": null,

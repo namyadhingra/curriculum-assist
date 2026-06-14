@@ -1,22 +1,37 @@
 import React, { useState, useMemo } from 'react';
 
+const CATEGORY_TITLES = {
+  'PC': 'Program Core (PC)',
+  'PE': 'Program Elective (PE)',
+  'OE': 'Open Electives (OE)',
+  'IS': 'Institute Science (IS)',
+  'IE': 'Institute Engineering (IE)',
+  'IH': 'Institute Humanities (IH)',
+  'LS': 'Programme Linked Science (LS)',
+  'PP': 'B.Tech. Project (PP)',
+  'EC': 'Engineering Science Core (EC)',
+  'EE': 'Engineering Science Elective (EE)',
+  'NH': 'Non-Graded Humanities (NH)',
+  'NE': 'Non-Graded Engineering (NE)',
+  'ND': 'Design/Practical Experience (ND)'
+};
+
 export default function ResultsTable({ matchedData }) {
   const [slotFilter, setSlotFilter] = useState('');
   const [deptFilter, setDeptFilter] = useState('');
 
   const allCourses = useMemo(() => {
     const arr = [];
-    if (matchedData.PC) arr.push(...matchedData.PC.map(c => ({...c, category: 'PC'})));
-    if (matchedData.PE) arr.push(...matchedData.PE.map(c => ({...c, category: 'PE'})));
-    if (matchedData.SC) arr.push(...matchedData.SC.map(c => ({...c, category: 'SC'})));
-    if (matchedData.SE) arr.push(...matchedData.SE.map(c => ({...c, category: 'SE'})));
+    Object.keys(matchedData).forEach(key => {
+      arr.push(...matchedData[key].map(c => ({...c, category: key})));
+    });
     return arr;
   }, [matchedData]);
 
   const uniqueSlots = [...new Set(allCourses.map(c => c.slot).filter(Boolean))].sort();
   const uniqueDepts = [...new Set(allCourses.map(c => c.department).filter(Boolean))].sort();
 
-  const renderTableSection = (title, data) => {
+  const renderTableSection = (key, data) => {
     const filtered = data.filter(c => {
       if (slotFilter && !String(c.slot).includes(slotFilter)) return false;
       if (deptFilter && c.department !== deptFilter) return false;
@@ -25,8 +40,10 @@ export default function ResultsTable({ matchedData }) {
 
     if (filtered.length === 0) return null;
 
+    const title = CATEGORY_TITLES[key] ? `${CATEGORY_TITLES[key]} Offered` : `${key} Offered`;
+
     return (
-      <div className="mb-4">
+      <div className="mb-4" key={key}>
         <h3>{title} ({filtered.length})</h3>
         <div style={{ overflowX: 'auto' }}>
           <table>
@@ -46,7 +63,12 @@ export default function ResultsTable({ matchedData }) {
               {filtered.map((c, i) => (
                 <tr key={i}>
                   <td>{c.code || '-'}</td>
-                  <td>{c.name || c.originalCurriculumName}</td>
+                  <td>
+                    {c.name || c.originalCurriculumName}
+                    {(c.currType === 'SC' || c.currType === 'SE') && (
+                      <span style={{ fontSize: '0.85em', color: '#e53e3e', marginLeft: '8px' }}>(Specialization)</span>
+                    )}
+                  </td>
                   <td>{c.slot || '-'}</td>
                   <td>{c.department || '-'}</td>
                   <td>{c.instructor || '-'}</td>
@@ -78,10 +100,9 @@ export default function ResultsTable({ matchedData }) {
       </div>
 
       <div id="capture-area" style={{ background: 'white', padding: '10px' }}>
-        {matchedData.PC && renderTableSection('Program Core (PC) Offered', matchedData.PC)}
-        {matchedData.PE && renderTableSection('Program Elective (PE) Offered', matchedData.PE)}
-        {matchedData.SC && renderTableSection('Specialization Core (SC) Offered', matchedData.SC)}
-        {matchedData.SE && renderTableSection('Specialization Elective (SE) Offered', matchedData.SE)}
+        {Object.keys(CATEGORY_TITLES).map(key => {
+          return matchedData[key] && renderTableSection(key, matchedData[key]);
+        })}
 
         {allCourses.length === 0 && (
           <p className="text-muted text-center py-4">No matching courses found in the uploaded sheet.</p>
