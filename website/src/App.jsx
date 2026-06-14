@@ -4,6 +4,7 @@ import ProgramSelector from './components/ProgramSelector';
 import ExcelUploader from './components/ExcelUploader';
 import ResultsTable from './components/ResultsTable';
 import ExportControls from './components/ExportControls';
+import CurriculumLinks from './components/CurriculumLinks';
 import { matchCourses } from './utils/matchCourses';
 import { saveState, loadState, clearState } from './utils/storage';
 
@@ -72,6 +73,7 @@ function App() {
           
           {matchedData && (
             <>
+              <CurriculumLinks program={selection.program} branch={selection.branch} />
               <ExportControls matchedData={matchedData} program={selection.program} branch={selection.branch} />
               <ResultsTable matchedData={matchedData} />
             </>
