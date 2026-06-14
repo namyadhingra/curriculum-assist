@@ -1,0 +1,32 @@
+16:31:28 | INFO     | main | ============================================================
+16:31:28 | INFO     | main | IIT Jodhpur Curriculum Extractor — starting run
+16:31:28 | INFO     | main | pdf_dir    : C:\Namya\Projects\curriculum-assist\curriculum-pdfs-extract\curriculums
+16:31:28 | INFO     | main | output_dir : C:\Namya\Projects\curriculum-assist\curriculum-pdfs-extract\output
+16:31:28 | INFO     | main | log_file   : C:\Namya\Projects\curriculum-assist\curriculum-pdfs-extract\logs\parse_20260614_163128.log
+16:31:28 | INFO     | main | Found 11 PDF(s) to parse.
+16:31:28 | INFO     | main | --------------------------------------------------
+16:31:28 | INFO     | main | Parsing: Curriculum-BS-Chemistry with Specialization.pdf
+16:31:31 | INFO     | main | --------------------------------------------------
+16:31:31 | INFO     | main | Parsing: Curriculum-BS-Mathematics and Computing.pdf
+16:31:36 | INFO     | main | --------------------------------------------------
+16:31:36 | INFO     | main | Parsing: Curriculum-BS-Physics with Specialization.pdf
+16:32:20 | INFO     | main | --------------------------------------------------
+16:32:20 | INFO     | main | Parsing: Curriculum-BTech-BB.pdf
+16:32:43 | INFO     | main | --------------------------------------------------
+16:32:43 | INFO     | main | Parsing: Curriculum-BTech-CE.pdf
+16:33:01 | INFO     | main | --------------------------------------------------
+16:33:01 | INFO     | main | Parsing: Curriculum-BTech-CI.pdf
+16:33:03 | INFO     | main | --------------------------------------------------
+16:33:03 | INFO     | main | Parsing: Curriculum-BTech-CM.pdf
+16:33:08 | INFO     | main | --------------------------------------------------
+16:33:08 | INFO     | main | Parsing: Curriculum-BTech-CSE.pdf
+16:33:15 | INFO     | main | --------------------------------------------------
+16:33:15 | INFO     | main | Parsing: Curriculum-BTech-EE.pdf
+16:33:20 | INFO     | main | --------------------------------------------------
+16:33:20 | INFO     | main | Parsing: Curriculum-BTech-ME.pdf
+16:33:46 | INFO     | main | --------------------------------------------------
+16:33:46 | INFO     | main | Parsing: Curriculum-BTech-MT.pdf
+16:34:07 | INFO     | main | ============================================================
+16:34:07 | INFO     | main | Parse complete: 11 success / 0 failure / 4531 total rows
+16:34:07 | INFO     | main | Assembling JSON structure …
+16:34:09 | INFO     | main | Output written → C:\Namya\Projects\curriculum-assist\curriculum-pdfs-extract\output\curriculum.json
